@@ -5,6 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'icon_content.dart';
 
 const double bottomContainerHeight = 80.0;
+const Color activeCardColor = Color(0xFF1D1E33);
+const Color bottomContainerColor = Color(0xFFEB1555);
 
 class InputPage extends StatefulWidget {
   @override
@@ -27,7 +29,7 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: ReusableCard(
-                    color: Color(0xFF1D1E33),
+                    color: activeCardColor,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.mars,
                       text: "MALE",
@@ -36,7 +38,7 @@ class _InputPageState extends State<InputPage> {
                 ),
                 Expanded(
                   child: ReusableCard(
-                    color: Color(0xFF1D1E33),
+                    color: activeCardColor,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.venus,
                       text: "FEMALE",
@@ -51,7 +53,7 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                     child: new ReusableCard(
-                  color: Color(0xFF1D1E33),
+                  color: activeCardColor,
                 )),
               ],
             ),
@@ -61,12 +63,12 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: new ReusableCard(
-                    color: Color(0xFF1D1E33),
+                    color: activeCardColor,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    color: Color(0xFF1D1E33),
+                    color: activeCardColor,
                     cardChild: new IconContent(
                       icon: FontAwesomeIcons.mars,
                       text: "MALE",
@@ -77,7 +79,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Container(
-            color: Color(0xFFEB1555),
+            color: bottomContainerColor,
             width: double.infinity,
             height: bottomContainerHeight,
             margin: EdgeInsets.only(top: 10.0),
